@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Freitas Soares | Desenvolvedor .NET & Angular</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">&lt;Alex /&gt;</a>
+            <ul class="nav__list">
+                <li><a href="#sobre" class="nav__link">Sobre</a></li>
+                <li><a href="#stack" class="nav__link">Stack</a></li>
+                <li><a href="#projetos" class="nav__link">Projetos</a></li>
+                <li><a href="#contato" class="nav__link">Contato</a></li>
+            </ul>
+            <button class="nav__toggle" aria-label="Menu">&#9776;</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <div class="hero__content">
+                <p class="hero__greeting">Ola, eu sou</p>
+                <h1 class="hero__name">Alex Freitas Soares</h1>
+                <p class="hero__title">Desenvolvedor .NET & Angular focado em construir solucoes robustas com codigo limpo e arquitetura bem definida</p>
+                <div class="hero__cta">
+                    <a href="#projetos" class="btn btn--primary">Ver Projetos</a>
+                    <a href="#contato" class="btn btn--outline">Fale Comigo</a>
+                </div>
+            </div>
+            <div class="hero__terminal">
+                <div class="terminal">
+                    <div class="terminal__header">
+                        <span class="terminal__dot terminal__dot--red"></span>
+                        <span class="terminal__dot terminal__dot--yellow"></span>
+                        <span class="terminal__dot terminal__dot--green"></span>
+                    </div>
+                    <div class="terminal__body">
+                        <code>
+                            <span class="terminal__prompt">$</span> dotnet --info<br>
+                            <span class="terminal__output">.NET SDK 10.0</span><br>
+                            <span class="terminal__prompt">$</span> ng version<br>
+                            <span class="terminal__output">Angular CLI: 19.x</span><br>
+                            <span class="terminal__prompt">$</span> echo $LOCATION<br>
+                            <span class="terminal__output">Sao Paulo, SP - Brasil</span><br>
+                            <span class="terminal__prompt">$</span> cat status.txt<br>
+                            <span class="terminal__output">Pronto para novos desafios_</span>
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="section container">
+            <h2 class="section__title">Sobre Mim</h2>
+            <div class="about">
+                <p>Desenvolvedor de software baseado em <strong>Sao Paulo, SP</strong>, com experiencia em desenvolvimento backend com <strong>C#/.NET</strong> e frontend com <strong>Angular</strong>. Apaixonado por criar APIs robustas, sistemas bem arquitetados e interfaces que fazem a diferenca.</p>
+                <p>Atualmente aprofundando conhecimentos em <strong>Clean Architecture</strong>, <strong>IA aplicada ao desenvolvimento</strong> e boas praticas de engenharia de software. Acredito que codigo bom e codigo que outros devs conseguem entender e manter.</p>
+            </div>
+        </section>
+
+        <section id="stack" class="section section--alt">
+            <div class="container">
+                <h2 class="section__title">Stack & Tecnologias</h2>
+                <div class="stack-grid">
+                    <div class="stack-card">
+                        <h3 class="stack-card__title">Backend</h3>
+                        <ul class="stack-card__list">
+                            <li>C# / .NET 10</li>
+                            <li>ASP.NET Core (Minimal API & MVC)</li>
+                            <li>Entity Framework Core</li>
+                            <li>SQL Server</li>
+                            <li>JWT Authentication</li>
+                        </ul>
+                    </div>
+                    <div class="stack-card">
+                        <h3 class="stack-card__title">Frontend</h3>
+                        <ul class="stack-card__list">
+                            <li>Angular / TypeScript</li>
+                            <li>Blazor Server</li>
+                            <li>React (fundamentos)</li>
+                            <li>HTML / CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="stack-card">
+                        <h3 class="stack-card__title">Ferramentas & Cloud</h3>
+                        <ul class="stack-card__list">
+                            <li>Git / GitHub</li>
+                            <li>AWS</li>
+                            <li>REST APIs</li>
+                            <li>xUnit / Testes</li>
+                            <li>Claude Code / IA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="section container">
+            <h2 class="section__title">Projetos</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-card__header">
+                        <span class="project-card__icon">&#128187;</span>
+                        <span class="project-card__lang">C#</span>
+                    </div>
+                    <h3 class="project-card__title">DevFreela</h3>
+                    <p class="project-card__desc">Plataforma de freelancing construida com ASP.NET Core, aplicando Clean Architecture e boas praticas de desenvolvimento.</p>
+                    <a href="https://github.com/Alexsir-Wolf/DevFreela" target="_blank" class="project-card__link">Ver no GitHub &rarr;</a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__header">
+                        <span class="project-card__icon">&#128176;</span>
+                        <span class="project-card__lang">C#</span>
+                    </div>
+                    <h3 class="project-card__title">FastPay</h3>
+                    <p class="project-card__desc">Sistema de pagamentos desenvolvido em .NET, com foco em processamento seguro e eficiente de transacoes financeiras.</p>
+                    <a href="https://github.com/Alexsir-Wolf/FastPay" target="_blank" class="project-card__link">Ver no GitHub &rarr;</a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__header">
+                        <span class="project-card__icon">&#129302;</span>
+                        <span class="project-card__lang">C#</span>
+                    </div>
+                    <h3 class="project-card__title">Console OpenAI</h3>
+                    <p class="project-card__desc">Aplicativo de console integrando a API da OpenAI, explorando inteligencia artificial com C# e .NET.</p>
+                    <a href="https://github.com/Alexsir-Wolf/Console_OpenAi" target="_blank" class="project-card__link">Ver no GitHub &rarr;</a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__header">
+                        <span class="project-card__icon">&#128101;</span>
+                        <span class="project-card__lang">C#</span>
+                    </div>
+                    <h3 class="project-card__title">API-RH</h3>
+                    <p class="project-card__desc">API REST para gestao de recursos humanos, construida com ASP.NET Core Web API e SQL Server.</p>
+                    <a href="https://github.com/Alexsir-Wolf/Api-RH" target="_blank" class="project-card__link">Ver no GitHub &rarr;</a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__header">
+                        <span class="project-card__icon">&#9729;&#65039;</span>
+                        <span class="project-card__lang">C#</span>
+                    </div>
+                    <h3 class="project-card__title">AWS Job Manager</h3>
+                    <p class="project-card__desc">Gerenciador de jobs na AWS, desenvolvido com .NET como parte de formacao em cloud computing.</p>
+                    <a href="https://github.com/Alexsir-Wolf/FormacaoAwsJobManager" target="_blank" class="project-card__link">Ver no GitHub &rarr;</a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__header">
+                        <span class="project-card__icon">&#128722;</span>
+                        <span class="project-card__lang">C#</span>
+                    </div>
+                    <h3 class="project-card__title">WebVendas</h3>
+                    <p class="project-card__desc">Sistema CRUD de vendas com ASP.NET, Razor Pages e SQL Server, aplicando o padrao MVC.</p>
+                    <a href="https://github.com/Alexsir-Wolf/WebVendas" target="_blank" class="project-card__link">Ver no GitHub &rarr;</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contato" class="section section--alt">
+            <div class="container">
+                <h2 class="section__title">Contato</h2>
+                <p class="contact__text">Quer trocar uma ideia sobre projetos, oportunidades ou tecnologia? Me chama!</p>
+                <div class="contact__links">
+                    <a href="https://github.com/Alexsir-Wolf" target="_blank" class="btn btn--primary">
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/freitas-alex-soares/" target="_blank" class="btn btn--outline">
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Alex Freitas Soares. Feito com HTML, CSS e IA.</p>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.querySelector('.nav__toggle');
+        const navList = document.querySelector('.nav__list');
+        toggle.addEventListener('click', () => navList.classList.toggle('nav__list--open'));
+        document.querySelectorAll('.nav__link').forEach(link =>
+            link.addEventListener('click', () => navList.classList.remove('nav__list--open'))
+        );
+    </script>
+</body>
+</html>
