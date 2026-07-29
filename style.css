@@ -352,6 +352,77 @@ body {
     color: var(--accent-hover);
 }
 
+/* ===== TIMELINE ===== */
+.timeline {
+    max-width: 750px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0.5rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--border);
+}
+
+.timeline__item {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.timeline__marker {
+    position: absolute;
+    left: -1.65rem;
+    top: 0.4rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 2px solid var(--bg-primary);
+}
+
+.timeline__content {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    transition: border-color 0.2s;
+}
+
+.timeline__content:hover {
+    border-color: var(--accent);
+}
+
+.timeline__date {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent);
+}
+
+.timeline__title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0.4rem 0 0.2rem;
+}
+
+.timeline__company {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.timeline__desc {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
 /* ===== CONTACT ===== */
 .contact__text {
     text-align: center;
